@@ -2,7 +2,19 @@
 
 /* -------------------------- */
 
+
+
 $(document).ready(function() {
+
+
+if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+	var height = window.innerHeight ? window.innerHeight : $(window).height();
+	var navheight = $( "#masthead" ).outerHeight()/2;
+	$('.show-holder').height(height-navheight);
+	$('.show').height(height-navheight);
+	$('.down').height(height-navheight);
+}
+
     
 var $hamburger = $(".hamburger");
   $hamburger.on("click", function(e) {
@@ -31,12 +43,21 @@ $(".show").swipe( {
 	return false;
   });
 
-var mySwiper = new Swiper ('.swiper-container', {
+
+var conc = ["drawing", "painting", "sculpture", "printmaking", "graphicdesign", "photography"];
+
+jQuery.each( conc, function( i, val ) {
+
+	var prev = '.prev-'+val;
+	var next = '.next-'+val;
+	var targets = '#'+val+' .swiper-container';
+  
+	var mySwiper = new Swiper (targets, {
     slidesPerView: 3,
       spaceBetween: 16,
       navigation: {
-        nextEl: '.swiper-next',
-        prevEl: '.swiper-prev',
+        nextEl: next,
+        prevEl: prev,
       },
       loop: true,
       // init: false,
@@ -51,5 +72,7 @@ var mySwiper = new Swiper ('.swiper-container', {
         },
       }}
     )
+
+});
 
 });
