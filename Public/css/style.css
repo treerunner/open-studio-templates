@@ -65,7 +65,7 @@ body {
 .show-holder {
   position: relative;
   height: calc(100vh - 3.125em);
-  background: url("/images/21014Mehretu.jpg") no-repeat top center;
+  background: url("/images/mehretu.jpg") no-repeat top center;
   background-size: cover;
 }
 
