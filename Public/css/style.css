@@ -44,6 +44,8 @@ body {
   /*background-color:rgba(0,0,0,0.1);*/
 }
 
+button:focus {outline:0;}
+
 .box {
     
 }
