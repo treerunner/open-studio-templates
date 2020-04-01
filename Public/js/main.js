@@ -40,6 +40,13 @@ $(".show").swipe( {
 // Toggle Nav on Click
   $('.hamburger').click(function() {
 	$('#site-menu').toggleClass('active');
+	$('#screen').toggleClass('active');
+	return false;
+  });
+
+   $('#screen').click(function() {
+	$('#site-menu').toggleClass('active');
+	$(this).toggleClass('active');
 	return false;
   });
 
