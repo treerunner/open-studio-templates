@@ -167,6 +167,7 @@ button:focus {outline:0;}
 
 .show-title {
   font-weight: 700;
+  letter-spacing: 2px;
   mix-blend-mode: hard-light;
   clear: both;
   display: inline;
@@ -243,7 +244,9 @@ button:focus {outline:0;}
 }
 
 .concentration h2 {
-  letter-spacing: 1px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   margin-top: 0;
 }
 
