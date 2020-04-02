@@ -106,7 +106,6 @@
 
 .width-12-12-m {
   grid-column: span 12;
-
 }
 
 /* D E S K T O P / L A P T O P */
@@ -162,6 +161,10 @@
 
 .centered-6 {
     grid-column: 4 / span 6;
+  }
+
+.over-3 {
+    grid-column: 5 / span 8;
   }
 
 }

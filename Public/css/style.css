@@ -244,6 +244,7 @@ button:focus {outline:0;}
 }
 
 .concentration h2 {
+  font-weight: 300;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -317,31 +318,32 @@ button:focus {outline:0;}
 .slidethumb .title-holder {
   display: flex;
   position: absolute;
-  height: 100%;
-  width: 100%;
+  bottom: .5em;
+  left: 0;
   overflow: hidden;
-  background: rgba(0,0,0,.4);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, transparent 100%);
-  transition: opacity .4s ease-in-out;
-  opacity: 0;
 }
 
 .slidethumb p {
-  font-size: .85em;
   letter-spacing: 1px;
-  position: absolute;
-  bottom: 0;
+  line-height: 1.4;
   margin: 0;
-  width: 100%;
-  line-height: 1.5;
-  padding: .5em 1em;
+  padding: .5em;
+}
+
+.slidethumb, .slidethumb:visited {
+  color: var(--background-color);
 }
 
 .slidethumb .title {
-  min-height: 4em;
-  position: relative;
+  background: linear-gradient(180deg, transparent 0, rgba(0,0,0,.9) 0%, rgba(0,0,0,.4) 100%);
+  min-height: 3.9em;
   width: 100%;
+  position: relative;
   align-self: flex-end;
+}
+
+.slidethumb .img-holder {
+margin: 0 0 0 2em;
 }
 
 .swiper-nav {
@@ -451,6 +453,9 @@ img {
   }
   #footer span {
     display: inline-block;
+  }
+  .concentration ul {
+    column-count: 2;
   }
 }
 

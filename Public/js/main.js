@@ -60,7 +60,7 @@ jQuery.each( conc, function( i, val ) {
 	var targets = '#'+val+' .swiper-container';
   
 	var mySwiper = new Swiper (targets, {
-    slidesPerView: 3,
+    slidesPerView: 2,
       spaceBetween: 16,
       navigation: {
         nextEl: next,
@@ -70,11 +70,11 @@ jQuery.each( conc, function( i, val ) {
       // init: false,
       breakpoints: {
         900: {
-          slidesPerView: 5,
+          slidesPerView: 4,
           spaceBetween: 16,
         },
         1180: {
-          slidesPerView: 6,
+          slidesPerView: 5,
           spaceBetween: 16,
         },
       }}
