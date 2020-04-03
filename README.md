@@ -1,2 +1,2 @@
 # open-studio
-Binghamton University Open Studio
+Binghamton University Open Studio Templates
