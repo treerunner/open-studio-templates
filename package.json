@@ -1,7 +1,7 @@
 {
   "name": "open-studio",
   "version": "1.0.0",
-  "description": "Binghamton University Open Studio",
+  "description": "Binghamton University Open Studio Templates",
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1"
@@ -15,10 +15,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/treerunner/open-studio.git"
+    "url": "git+https://github.com/treerunner/open-studio-templates.git"
   },
   "bugs": {
-    "url": "https://github.com/treerunner/open-studio/issues"
+    "url": "https://github.com/treerunner/open-studio-templates/issues"
   },
-  "homepage": "https://github.com/treerunner/open-studio#readme"
+  "homepage": "https://github.com/treerunner/open-studio-templates#readme"
 }
