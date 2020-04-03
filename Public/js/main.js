@@ -44,9 +44,8 @@ $(".show").swipe( {
 	return false;
   });
 
-   $('#screen').click(function() {
-	$('#site-menu').toggleClass('active');
-	$(this).toggleClass('active');
+  $('#screen').click(function() {
+	$( ".hamburger" ).trigger( "click" );
 	return false;
   });
 

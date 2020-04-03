@@ -67,6 +67,7 @@ button:focus {outline:0;}
 .show-holder {
   position: relative;
   height: calc(100vh - 3.125em);
+  background-color: var(--body-color);
   background: url("/images/mehretu.jpg") no-repeat top center;
   background-size: cover;
 }
@@ -87,7 +88,7 @@ button:focus {outline:0;}
   height: 100%;
   position: absolute;
   z-index: 999998;
-  background-color: rgba(0,0,0,.6);
+  background-color: rgba(0,0,0,.3);
   visibility: hidden;
   opacity: 0;
   transition: visibility, opacity .4s cubic-bezier(.694, .0482, .335, 1);
@@ -210,9 +211,20 @@ button:focus {outline:0;}
 }
 
 #footer span {
-  display: none;
+  display: inline-block;
   color: #DB0059;
   animation: throb 1s infinite  alternate;
+}
+
+#footer svg {
+  display: inline-block;
+  width: 1em;
+  height: auto;
+  fill: var(--background-color);
+}
+
+#footer .over {
+  text-align: right;
 }
 
 .concentration {
@@ -318,7 +330,7 @@ button:focus {outline:0;}
 .slidethumb .title-holder {
   display: flex;
   position: absolute;
-  bottom: .5em;
+  bottom: .75em;
   left: 0;
   overflow: hidden;
 }
@@ -451,9 +463,6 @@ img {
   .slidethumb:hover .title-holder {
     opacity: 1;
   }
-  #footer span {
-    display: inline-block;
-  }
   .concentration ul {
     column-count: 2;
   }
@@ -514,9 +523,6 @@ img {
   .hamburger-inner::after {
     bottom: -6px; }
 
-/*
-   * 3DXY
-   */
 .hamburger--3dxy .hamburger-box {
   perspective: 36px; }
 
@@ -538,12 +544,9 @@ img {
 }
 
 @keyframes throb {
-    0% { transform: scale(1.0); }
-    100% { transform: scale(1.3); }
+    0% { transform: scale(1.3); }
+    100% { transform: scale(1.0); }
 }
-
-
-
 
 .snappy { -webkit-transition: all 300ms cubic-bezier(.694, .0482, .335, 1); transition: all 300ms cubic-bezier(.694, .0482, .335, 1); }
 
